@@ -96,3 +96,33 @@ Math.max(34,32,37)
 
 // the use of Num()
 Number('2')+2
+
+// Strings in JavaScript
+// Concatenation
+const firstname = 'Mabel'
+const middlename = 'Aikins'
+const lastname = 'Acquah'
+firstname + ' ' + middlename + ' ' + lastname ;
+// Template literal
+`${firstname} ${middlename} ${lastname}`;
+
+// string Method
+let fullName = 'Mabel Aikins Acquah'
+fullName.length
+fullName.toUpperCase()
+fullName.toLowerCase()
+fullName.charAt(8)
+fullName.slice(7,19)
+fullName.split('')
+fullName.replace('Mabel','Quinlyn')
+fullName.indexOf("Aik")
+
+// string Conversion
+Number('3.243')
+parseInt('3.243')
+parseFloat('3.243')
+let amount = 18000
+console.log(`GHS${amount}`)
+amount.toString()
+
+
