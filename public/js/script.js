@@ -161,3 +161,46 @@ const users = [
   }
 ]; 
 users; 
+
+// write a function that will take a user with firstname, lastname and return fullname
+
+function fullName(user)
+{
+ return {
+   ...user,
+   fullName: `${user.firstname} ${user.lastname}`
+ }; 
+}
+const user = {
+  firstname: 'Mabel',
+  lastname: 'Acquah'
+}
+
+fullName (user);
+
+// Array map
+const users = [
+  {firstname: 'Mabel', lastname: 'Acquah'},
+  {firstname: 'Bel', lastname: 'Koko'},
+  {firstname: 'kutee', lastname: 'kutte'},
+  {firstname: 'Read', lastname: 'Well'},
+]
+users.map(fullName);
+
+// square of numbers
+function square(number){
+  return number * number;
+}
+
+square(7)
+const numbers = [9, 8, 7, 6]
+numbers.map(square)
+
+// Array filter
+function isEven(number){
+  return number % 2 === 0;
+}
+isEven(7)
+numbers.filter(isEven)
+
+
