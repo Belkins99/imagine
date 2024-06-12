@@ -179,12 +179,12 @@ const user = {
 fullName (user);
 
 // Array map
-const users = [
-  {firstname: 'Mabel', lastname: 'Acquah'},
-  {firstname: 'Bel', lastname: 'Koko'},
-  {firstname: 'kutee', lastname: 'kutte'},
-  {firstname: 'Read', lastname: 'Well'},
-]
+// const users = [
+//   {firstname: 'Mabel', lastname: 'Acquah'},
+//   {firstname: 'Bel', lastname: 'Koko'},
+//   {firstname: 'kutee', lastname: 'kutte'},
+//   {firstname: 'Read', lastname: 'Well'},
+// ]
 users.map(fullName);
 
 // square of numbers
@@ -202,5 +202,36 @@ function isEven(number){
 }
 isEven(7)
 numbers.filter(isEven)
+
+// write a function will allow a user to reset their password
+// // const user = {
+//   email: 'bel@gmail.com',
+//   password: '1234'
+// // }
+
+
+function resetPassword(email, newPassword) {
+// check if email and new password was provied
+  if (!email || !newPassword){
+    'email or password not provided';
+  }
+  
+  // Update password with new one
+  user.password = newPassword;
+  return 'password reset successful';
+}
+  
+
+user;
+resetPassword('bel@gmail.com','9090');
+user;
+  
+ 
+
+
+
+
+
+
 
 
